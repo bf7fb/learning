@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a>hello</a>
+<a href="/hi">测试跳转:localhost:8080/hi</a>
+
+<a th:href="@{/hi}">真正跳转hi:localhost:8080/springMVC/hi</a>
+
+<a th:href="@{/test/rest/1/admin}">占位符获取参数测试</a>
+
+<form th:action="@{/param}" method="post">
+    <input type="text" name="username"><br>
+    <input type="password" name="password"><br>
+    <input type="submit" value="login">
+</form>
+
+
+<form th:action="@{/param/pojo}" method="post">
+    <input type="text" name="username"><br>
+    <input type="password" name="password"><br>
+    <input type="submit" value="login">
+</form>
+
+
+<a th:href="@{/test/ModelAndView}">ModelAndView 获取域中数据</a>
+<br>
+<a th:href="@{/test/Model}">Model 获取域中数据</a>
+<br>
+<a th:href="@{/test/session}">session 获取域中数据</a>
+<br>
+<a th:href="@{/test/Application}">Application 获取域中数据</a>
+
+<a th:href="@{/test/view/thymleafview}">thymleafview</a>
+
+<br>
+
+<a th:href="@{/test/donwload}">下载一张图片</a>
+<br>
+
+<form th:action="@{/test/up}" method="post" enctype="multipart/form-data">
+    头像：<input type="file" name="photo"><br>
+    <input type="submit" value="上传">
+</form>
+
+</body>
+</html>

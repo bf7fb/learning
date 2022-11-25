@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="studentone" class="com.wangzhen.spring.student"></bean>
+    <bean id="teacherone" class="com.wangzhen.spring.teacher"></bean>
+
+    <bean id="studenttwo" class="com.wangzhen.spring.student">
+        <property name="id" value="10010"></property>
+        <property name="sname" value="wangzhen"></property>
+        <property name="ssex" value="nan"></property>
+
+    </bean>
+
+    <bean id="studentthr" class="com.wangzhen.spring.student">
+        <constructor-arg  value="10010"></constructor-arg>
+        <constructor-arg  value="wangzhen"></constructor-arg>
+        <constructor-arg  value="nan"></constructor-arg>
+        <constructor-arg  value="99" name="score"></constructor-arg>
+    </bean>
+
+    <bean id="studentfor" class="com.wangzhen.spring.student">
+        <constructor-arg  value="10010"></constructor-arg>
+        <constructor-arg  value="wangzhen"></constructor-arg>
+        <constructor-arg  value="nan"></constructor-arg>
+        <constructor-arg  value="19" name="age"></constructor-arg>
+    </bean>
+
+    <bean id="studentfive" class="com.wangzhen.spring.student">
+        <property name="id" value="10010"></property>
+        <property name="sname">
+            <null/>
+        </property>
+        <property name="ssex" >
+            <value><![CDATA[ <男> ]]></value>
+        </property>
+    </bean>
+
+    <bean id="student1" class="com.wangzhen.spring.student">
+        <property name="id" value="10010"></property>
+        <property name="sname" value="wangzhen"></property>
+        <property name="ssex" value="nan"></property>
+<!--        <property name="clazz" ref="clazz1"></property>-->
+        <property name="clazz">
+            <bean id="innnerclazz" class="com.wangzhen.spring.Clazz">
+                <property name="id" value="10001"></property>
+                <property name="name" value="java自学班"></property>
+            </bean>
+        </property>
+
+        <property name="hobby" >
+            <array>
+                <value>喝酒</value>
+                <value>抽烟</value>
+                <value>烫头</value>
+            </array>
+        </property>
+<!--        <property name="mapTeachers">-->
+<!--            <map>-->
+<!--                <entry key="mathteacher" value-ref="teacher1"></entry>-->
+<!--                <entry key="chineseteacher" value-ref="teacher2"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+        <property name="mapTeachers" ref="mapteachers"></property>
+    </bean>
+
+    <util:map id="mapteachers">
+        <entry key="mathteacher" value-ref="teacher1"></entry>
+        <entry key="chineseteacher" value-ref="teacher2"></entry>
+    </util:map>
+
+    <bean id="teacher1" class="com.wangzhen.spring.teacher">
+        <property name="tId" value="100010"></property>
+        <property name="tName" value="数学老师"></property>
+    </bean>
+
+    <bean id="teacher2" class="com.wangzhen.spring.teacher">
+        <property name="tId" value="100020"></property>
+        <property name="tName" value="语文老师"></property>
+    </bean>
+
+
+    <bean id="clazz1" class="com.wangzhen.spring.Clazz">
+        <property name="id" value="10001"></property>
+        <property name="name" value="java自学班"></property>
+    </bean>
+
+
+
+    <bean id="clazz2" class="com.wangzhen.spring.Clazz">
+        <property name="id" value="10001"></property>
+        <property name="name" value="java自学班"></property>
+<!--        方法一-->
+<!--        <property name="students" >-->
+<!--            <list>-->
+<!--                <ref bean="student1"></ref>-->
+<!--                <ref bean="studentfive"></ref>-->
+<!--            </list>-->
+<!--        </property>-->
+        <property name="students" ref="studentList"></property>
+    </bean>
+
+    <util:list id="studentList">
+        <ref bean="student1"></ref>
+        <ref bean="studentfive"></ref>
+    </util:list>
+
+</beans>

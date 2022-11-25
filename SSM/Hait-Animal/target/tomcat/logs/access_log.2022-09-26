@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:31:45 +0800] "GET /Hait-Animal HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:31:45 +0800] "GET /Hait-Animal/ HTTP/1.1" 200 1817 http-bio-8080-exec-3 544
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:31:45 +0800] "GET /Hait-Animal/css/login.css HTTP/1.1" 200 2016 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:31:45 +0800] "GET /Hait-Animal/animalImgs/startAnimal1.jpg HTTP/1.1" 200 213412 http-bio-8080-exec-2 11
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:31:45 +0800] "GET /Hait-Animal/imgs/Desert1.jpg HTTP/1.1" 200 1631571 http-bio-8080-exec-5 13
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:31:45 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:31:47 +0800] "GET /Hait-Animal/animalImgs/startAnimal3.jpg HTTP/1.1" 200 291897 http-bio-8080-exec-8 3
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:32:12 +0800] "GET /Hait-Animal/animalImgs/startAnimal4.jpg HTTP/1.1" 200 73339 http-bio-8080-exec-9 2
+0:0:0:0:0:0:0:1 - - [26/Sep/2022:21:33:25 +0800] "GET /Hait-Animal/animalImgs/startAnimal7.jpg HTTP/1.1" 200 200762 http-bio-8080-exec-1 5

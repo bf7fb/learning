@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-proxy" />
+        <module name="mybatis_resultMap" />
+        <module name="spring_annoation" />
+        <module name="spring_createIoc" />
+        <module name="spring_restful_test" />
+        <module name="Hait-Animal" />
+        <module name="spring_filter" />
+        <module name="spring_mvc_extension" />
+        <module name="mybatis_demo1" />
+        <module name="spring-aop" />
+        <module name="spring_helloWorld" />
+        <module name="spring_ioc_xml" />
+        <module name="springMVC_helloworld" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis_mbg" target="1.8" />
+      <module name="spring_mvc_helloworld" target="1.5" />
+      <module name="spring_mvc_helloworld1" target="1.5" />
+      <module name="SSM" target="1.7" />
+      <module name="untitled" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a >success</a>
+
+<p th:text="${modelAndViewrequestScope}"></p>
+<br>
+<p th:text="${modelRequestScope}"></p>
+<br>
+<p th:text="${session.sessionScope}"></p>
+<br>
+<p th:text="${application.applicationScope}"></p>
+</body>
+</html>

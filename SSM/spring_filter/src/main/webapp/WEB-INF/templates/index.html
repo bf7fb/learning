@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a th:href="@{/test/filter}">禁止访问 拦截成功</a>
+<br>
+<a th:href="@{/test/exclude}">拦截失败 被放行</a>
+<br>
+<a th:href="@{/test/exception}">测试异常</a>
+</body>
+</html>

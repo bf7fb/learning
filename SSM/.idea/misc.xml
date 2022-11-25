@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Hait-Animal" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_filter" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_mvc_extension" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_mvc_helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/spring_restful_test" />
+    <file type="web" url="file://$PROJECT_DIR$/springMVC_helloworld" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mybatis_demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_resultMap/pom.xml" />
+        <option value="$PROJECT_DIR$/Hait-Animal/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_helloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_createIoc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_ioc_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_annoation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/springMVC_helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_restful_test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_filter/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mvc_extension/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SwUserDefinedSpecifications">
+    <option name="specTypeByUrl">
+      <map />
+    </option>
+  </component>
+</project>
